@@ -4,21 +4,21 @@ let playlist = [
     artist: "Harris Jayaraj",
     src: "nenjukkul-peidhidum-by-dinesh-babu-407735.mp3",
     img: "./img1.jpg",
-    bg: "#ffe0ff"
+    bg: "./pic1.jpg"       
   },
   {
     title: "Kanmoodi Thirakumpodhu",
     artist: "AR Rahman",
     src: "kanmoodi-thirakkumpothu-bgm-by-dinu-infinity-219007.mp3",
     img: "./image2.jpg",
-    bg: "#c2e9fb"
+    bg: "./pic2.jpg"        
   },
   {
     title: "Love Bgm",
     artist: "GV Prakash",
     src: "love_bgm_no_copyright_music-113843.mp3",
     img: "./image3.jpg",
-    bg: "#ffd6a5"
+    bg: "./pic3.webp"       
   }
 ];
 
@@ -27,7 +27,6 @@ let audio = document.getElementById("audio");
 let img = document.querySelector(".song-img");
 let title = document.getElementById("title");
 let artist = document.getElementById("artist");
-let playerBox = document.querySelector(".music-player");
 let progress = document.getElementById("progress");
 let playBtn = document.getElementById("playbtn");
 
@@ -37,7 +36,9 @@ function loadSong(i) {
   img.src = song.img;
   title.innerText = song.title;
   artist.innerText = song.artist;
-  playerBox.style.background = song.bg;
+
+  
+  document.body.style.backgroundImage = `url('${song.bg}')`;
 
   audio.play();
   playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
