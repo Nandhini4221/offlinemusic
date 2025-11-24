@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Music</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="music-player">
+
+      <nav>
+        <div class="circle"><i class="fa-solid fa-angles-left"></i></div>
+        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+
+      <img src="./img1.jpg" class="song-img">
+      <h1 id="title">Nenjukkul-Peidhidum-Maamalai</h1>
+      <p id="artist">Hariharan</p>
+
+      <audio id="audio"></audio>
+
+      <input type="range" value="0" id="progress">
+
+      <div class="controls">
+        <button onclick="prevSong()"><i class="fa-solid fa-backward"></i></button>
+        <button onclick="playPause()" id="playbtn"><i class="fa-solid fa-play"></i></button>
+        <button onclick="nextSong()"><i class="fa-solid fa-forward"></i></button>
+      </div>
+    </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
+
+ 
