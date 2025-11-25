@@ -1,12 +1,50 @@
 let playlist = [
-  {
+   {
     title: "Nenjukkul Peidhidum",
     artist: "Harris Jayaraj",
     src: "nenjukkul-peidhidum-by-dinesh-babu-407735.mp3",
-    img: "./img1.jpg",
+    img: "./image1.jpg",
     bg: "./pic1.jpg"       
   },
-  {
+    {
+    title: "Piraithedum iraviley",
+    artist: "GV Prakash",
+    src: "Pirai_Thedum_-_Saindhavi_GVPrakash_Kumar.mp3",
+    img: "./image4.jpg",
+    bg: "./pic4.jpg"       
+  },
+
+     {
+    title: "Unakaga Porantheney",
+    artist: "Anu Anand",
+    src: "Unakaga Poranthene Enathalaga Song.mp3",
+    img: "./image7.jpg",
+    bg: "./pic7.jpg"       
+  },
+      {
+      title: "Mudhal Nee Mudivum Nee",
+    artist: "Sid Sriram",
+    src: "Mudhal Nee Mudivum Nee Song Download.mp3",
+    img: "./image8.jpg",
+    bg: "./pic8.jpg"       
+  },
+       {
+    title: "Kadhalea Kadhalea",
+    artist: "Govind Vasantha",
+    src: "96 Movie Theme.mp3",
+    img: "./image6.jpg",
+    bg: "./pic6.jpg"       
+  },
+ 
+
+ {
+    title: "Minnaley",
+    artist: "GV Prakash",
+    src: "Hey_Minnale_-_Amaran.mp3",
+    img: "./image5.jpg",
+    bg: "./pic5.jpg"       
+  },
+   {
     title: "Kanmoodi Thirakumpodhu",
     artist: "AR Rahman",
     src: "kanmoodi-thirakkumpothu-bgm-by-dinu-infinity-219007.mp3",
@@ -19,7 +57,7 @@ let playlist = [
     src: "love_bgm_no_copyright_music-113843.mp3",
     img: "./image3.jpg",
     bg: "./pic3.webp"       
-  }
+  }, 
 ];
 
 let index = 0;
@@ -83,3 +121,4 @@ audio.onended = function () {
 };
 
 loadSong(index);
+
